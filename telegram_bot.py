@@ -10,23 +10,38 @@ from nltk.corpus import stopwords
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import ConversationChain
 from langchain_community.chat_models import ChatOpenAI
-import nltk
-print('ho')
-print('ho')
-# nltk.download('punkt')
-# nltk.download('stopwords')
 
-file_path = '/home/mahdi146/projects/def-b09sdp/mahdi146/api-key/telegram_token.text'
-with open(file_path, 'r') as file:
+# Download required NLTK resources
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
+# print('ho')
+# print('ho')
+# print(nltk.data.find('tokenizers/punkt'))
+
+# # Sample text for tokenization
+# text = "Hello! This is a test."
+# tokens = word_tokenize(text)
+# print(tokens)
+# # nltk.download('punkt')
+
+
+telegram_token_path = r'F:\Job\Projects\Medical Bot\api_keys\telegram_token.text'
+with open(telegram_token_path, 'r') as file:
     TELEGRAM_TOKEN = file.read().strip()  
+
+api_key_path = r'F:\Job\Projects\Medical Bot\api_keys\key.text'
+with open(api_key_path, 'r') as file:
+    api_key = file.read().strip()  
 
 FASTAPI_URL = "http://127.0.0.1:8000/ask"
 
 
 conversation_chain = ConversationChain(
-    llm=ChatOpenAI(temperature=0.7, openai_api_key="your-openai-api-key")
+    llm=ChatOpenAI(temperature=0.7, openai_api_key=api_key)
 )
-print('hi')
+
 # Logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -43,22 +58,11 @@ def preprocess_question(question):
 async def start(update: Update, context):
     await update.message.reply_text("Hi! I'm your Medical FAQ Bot. Ask me a medical question!")
 
-# async def handle_message(update: Update, context):
-#     user_question = update.message.text
-#     response = requests.post(FASTAPI_URL, json={"question": user_question})
-#     bot_response = response.json().get("answer", "I couldn't find an answer. Please try again.")
-#     await update.message.reply_text(bot_response)
 
 async def handle_message(update: Update, context):
     user_question = preprocess_question(update.message.text)
-    
-    # Optionally use Langchain for conversation management
+
     response = conversation_chain.run(input=user_question)
-    
-    # If you prefer calling FastAPI and OpenAI directly:
-    # response = requests.post(FASTAPI_URL, json={"question": user_question})
-    # bot_response = response.json().get("answer", "I couldn't find an answer. Please try again.")
-    
     await update.message.reply_text(response)
 
 

@@ -3,16 +3,15 @@ from fastapi import Body
 from pydantic import BaseModel
 import openai
 import os
-file_path = '/home/mahdi146/projects/def-b09sdp/mahdi146/api-key/key.text'
+file_path = r'F:\Job\Projects\Medical Bot\api_keys\key.text'
 with open(file_path, 'r') as file:
     api_key = file.read().strip()  
-
+print(api_key)
 class Question(BaseModel):
     question: str
 
 app = FastAPI()
 openai.api_key = api_key
-print('hi')
 @app.get("/")
 def read_root():
     print('there')

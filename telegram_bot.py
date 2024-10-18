@@ -65,12 +65,12 @@ async def handle_message(update: Update, context):
     user_question = preprocess_question(update.message.text)
 
     # Check if the user's question contains any medical keywords
-    if any(keyword in user_question.lower() for keyword in MEDICAL_KEYWORDS):
-        prompt = f"You are a medical assistant. Answer the following medical question: {user_question}"
-        response = conversation_chain.run(input=prompt)
-    else:
-        response = "I'm sorry, but I can only answer medical questions."
-
+    # if any(keyword in user_question.lower() for keyword in MEDICAL_KEYWORDS):
+    #     prompt = f"You are a medical assistant. Answer the following medical question: {user_question}"
+    #     response = conversation_chain.run(input=prompt)
+    # else:
+    #     response = "I'm sorry, but I can only answer medical questions."
+    response = conversation_chain.run(input=user_question)
     await update.message.reply_text(response)
 
 

@@ -10,36 +10,11 @@ from nltk.corpus import stopwords
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import ConversationChain
 from langchain_community.chat_models import ChatOpenAI
+import pandas as pd
 
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
-
-MEDICAL_KEYWORDS = [
-    "pain", "symptom", "disease", "treatment", "medication",
-    "doctor", "health", "diagnosis", "illness", "surgery",
-    "prescription", "therapy", "vaccine", "condition", "medical",
-    "infection", "anesthesia", "allergy", "chronic", "acute",
-    "diagnostic", "pathology", "physiotherapy", "radiology", "oncology",
-    "hospital", "emergency", "care", "patient", "nurse",
-    "mental health", "depression", "anxiety", "diabetes", "hypertension",
-    "cardiology", "neurology", "gastroenterology", "dermatology", "orthopedics",
-    "pediatrics", "geriatrics", "clinical", "genetics", "immunization",
-    "screening", "examination", "laboratory", "radiograph", "biopsy",
-    "surgery", "rehabilitation", "medication", "treatment plan", "dosage",
-    "side effects", "complications", "recovery", "prognosis", "symptom management",
-    "physical therapy", "psychotherapy", "medication adherence", "clinical trial", "follow-up",
-    "patient history", "consultation", "referral", "medical imaging", "healthcare",
-    "pharmaceutical", "nursing", "intensive care", "outpatient", "inpatient",
-    "specialist", "general practitioner", "diagnostic test", "clinical guidelines", "health insurance",
-    "wellness", "nutrition", "exercise", "rehabilitation", "support group",
-    "chronic disease", "acute illness", "preventive care", "health education", "patient advocacy",
-    "palliative care", "end-of-life care", "advanced directives", "hospitalization", "informed consent",
-    "health disparities", "communicable disease", "non-communicable disease", "epidemiology", "public health",
-    "bioethics", "telemedicine", "e-health", "health technology", "health policy",
-    "medical research", "health systems", "clinical outcomes", "patient safety", "quality of care",
-    "health metrics", "performance measures", "data analysis", "medical coding", "insurance claims"
-]
 
 
 telegram_token_path = r'F:\Job\Projects\Medical Bot\api_keys\telegram_token.text'
@@ -59,6 +34,18 @@ conversation_chain = ConversationChain(
 
 # Logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+
+
+
+def load_medical_keywords(file_path):
+    try:
+        df = pd.read_csv(file_path)
+        return df['keyword'].tolist()
+    except FileNotFoundError:
+        print(f"Error: The file {file_path} was not found.")
+        return []
+    
+MEDICAL_KEYWORDS = load_medical_keywords('F:\Job\Projects\Medical Bot\LLM-Medical-FAQ-Bot\medical_terms.csv')
 
 # Preprocessing function using NLTK
 def preprocess_question(question):

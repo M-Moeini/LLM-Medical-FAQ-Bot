@@ -28,6 +28,7 @@ if not api_key:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
 
 
+
 FASTAPI_URL = "http://127.0.0.1:8000/ask"
 
 
@@ -49,7 +50,7 @@ def load_medical_keywords(file_path):
         print(f"Error: The file {file_path} was not found.")
         return []
     
-MEDICAL_KEYWORDS = load_medical_keywords('F:\Job\Projects\Medical Bot\LLM-Medical-FAQ-Bot\medical_terms.csv')
+MEDICAL_KEYWORDS = load_medical_keywords('medical_terms.csv')
 MEDICAL_KEYWORDS = [item.lower() for item in MEDICAL_KEYWORDS]
 
 # Preprocessing function using NLTK

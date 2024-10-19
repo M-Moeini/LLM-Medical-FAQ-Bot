@@ -8,7 +8,8 @@ api_key = os.getenv('OPENAI_API_KEY')
 if not api_key:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
 
-print(api_key)
+
+
 class Question(BaseModel):
     question: str
 

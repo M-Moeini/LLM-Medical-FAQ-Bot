@@ -36,7 +36,6 @@ conversation_chain = ConversationChain(
     llm=ChatOpenAI(temperature=0.7, openai_api_key=api_key)
 )
 
-# Logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 
@@ -56,9 +55,9 @@ MEDICAL_KEYWORDS = [item.lower() for item in MEDICAL_KEYWORDS]
 # Preprocessing function using NLTK
 def preprocess_question(question):
     tokens = word_tokenize(question)
-    tokens = [word for word in tokens if word.isalnum()]  # Keep only alphanumeric tokens
+    tokens = [word for word in tokens if word.isalnum()]
     stop_words = set(stopwords.words('english'))
-    tokens = [word for word in tokens if word.lower() not in stop_words]  # Remove stopwords
+    tokens = [word for word in tokens if word.lower() not in stop_words]
     return " ".join(tokens)
 
 
@@ -85,14 +84,8 @@ async def handle_message(update: Update, context):
 # Main function to run the bot
 def main():
     application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
-
-    # Command handler for /start
     application.add_handler(CommandHandler("start", start))
-
-    # Message handler for all messages
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-
-    # Start the bot
     application.run_polling()
 
 if __name__ == "__main__":

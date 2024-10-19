@@ -24,12 +24,12 @@ def read_root():
 
 
 @app.post("/ask")
-async def ask_openai(question: Question):  # Expecting a JSON body
+async def ask_openai(question: Question):
     try:
         # Call the OpenAI Chat API to generate a response
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # or use "gpt-4" if you have access
-            messages=[{"role": "user", "content": question.question}]  # Set up the message format
+            model="gpt-3.5-turbo", 
+            messages=[{"role": "user", "content": question.question}] 
         )
         return {"answer": response.choices[0].message['content'].strip()}
     except Exception as e:

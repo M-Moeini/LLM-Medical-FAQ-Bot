@@ -10,6 +10,7 @@ if not api_key:
 
 
 
+
 class Question(BaseModel):
     question: str
 

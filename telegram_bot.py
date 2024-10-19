@@ -3,6 +3,8 @@ import nltk
 import requests
 import asyncio
 import os
+import spacy
+import pandas as pd
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 from nltk.tokenize import word_tokenize
@@ -10,7 +12,7 @@ from nltk.corpus import stopwords
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import ConversationChain
 from langchain_community.chat_models import ChatOpenAI
-import pandas as pd
+
 
 nltk.download('punkt')
 nltk.download('punkt_tab')
@@ -65,12 +67,13 @@ async def handle_message(update: Update, context):
     user_question = preprocess_question(update.message.text)
 
     # Check if the user's question contains any medical keywords
-    # if any(keyword in user_question.lower() for keyword in MEDICAL_KEYWORDS):
-    #     prompt = f"You are a medical assistant. Answer the following medical question: {user_question}"
-    #     response = conversation_chain.run(input=prompt)
-    # else:
-    #     response = "I'm sorry, but I can only answer medical questions."
-    response = conversation_chain.run(input=user_question)
+    if any(keyword in user_question.lower() for keyword in MEDICAL_KEYWORDS):
+        prompt = f"You are a medical assistant. Answer the following medical question without asking further questions: {user_question}"
+        response = conversation_chain.run(input=prompt)
+    else:
+        response = "I'm sorry, but I can only answer medical questions."
+        
+    # response = conversation_chain.run(input=user_question)
     await update.message.reply_text(response)
 
 

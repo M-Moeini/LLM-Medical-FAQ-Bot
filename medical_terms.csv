@@ -1,87 +1,572 @@
 keyword
-pain
-symptom
-disease
-treatment
-medication
-doctor
-health
-diagnosis
-illness
-surgery
-prescription
-therapy
-vaccine
-condition
-medical
-allergy
-infection
-virus
-bacteria
-chronic
-acute
-painkiller
-physical therapy
-nurse
-patient
-examination
-hospital
-clinic
-medicine
-surgery
-blood
-lab test
-immunization
-doctor's visit
-diagnostic
-treatment plan
-referral
-medical history
-healthcare
-wellness
-nutrition
-exercise
-mental health
-depression
-anxiety
-diabetes
-hypertension
-cancer
-cardiology
-neurology
-orthopedics
-dermatology
-pediatrics
-geriatrics
-urology
-gastroenterology
-pulmonology
-anesthesia
-radiology
-pathology
-pharmacy
-health insurance
-emergency
-first aid
-prescription drugs
-dosage
-side effects
-contraindications
-clinical trial
-medical device
-telemedicine
-telehealth
-health records
-patient care
-health professional
-preventive care
-screening
-check-up
-vital signs
-consultation
-specialist
-holistic
-herbal medicine
-pain management
-rehabilitation
-wellness check
+Medical Terms
+Abdominal pain
+Abrasion
+Acute
+Allergy
+Anemia
+Angina
+Anorexia
+Antibiotic
+Antibody
+Antigen
+Aortic aneurysm
+Arrhythmia
+Arthritis
+Asthma
+Atherosclerosis
+Atrophy
+Autoimmune disease
+Bacterial infection
+Benign
+Biopsy
+Blood pressure
+Blood sugar
+Bone density
+Bronchitis
+Cancer
+Cardiac arrest
+Cardiovascular
+Carpal tunnel syndrome
+Catheter
+Cellulitis
+Chemotherapy
+Chronic
+Cirrhosis
+Colitis
+Colonoscopy
+Congestive heart failure
+Conjunctivitis
+CT scan
+Cyst
+Diabetes
+Diabetic neuropathy
+Dialysis
+Digestive system
+Disease
+Dizziness
+Drug interaction
+Edema
+Electrocardiogram (ECG)
+Electrolytes
+Endoscopy
+Epidemic
+Epilepsy
+Esophagus
+Fever
+Fibromyalgia
+Fracture
+Gallbladder
+Gastroenteritis
+Gastroesophageal reflux disease (GERD)
+Glucose
+Hemoglobin
+Hepatitis
+Hernia
+High blood pressure (hypertension)
+High cholesterol
+Histamine
+Immunization
+Inflammation
+Insulin
+Intestinal obstruction
+Irritable bowel syndrome (IBS)
+Jaundice
+Joint pain
+Kidney stones
+Leukemia
+Liver function tests
+Malignant
+Metabolism
+Migraine
+Mole
+Multiple sclerosis
+MRI (Magnetic Resonance Imaging)
+Nausea
+Neuropathy
+Obesity
+Osteoporosis
+Pain management
+Pap smear
+Pathogen
+Pediatrician
+Peripheral artery disease
+Physical therapy
+Pneumonia
+Poisoning
+Polycythemia
+Prescription
+Prevention
+Prostate cancer
+Pulmonary embolism
+Radiation therapy
+Recovery
+Reflux
+Rehabilitation
+Renal failure
+Respiratory system
+Risk factors
+Rubella
+Sarcoma
+Scabies
+Screening
+Sepsis
+Sickle cell anemia
+Sinusitis
+Sleep apnea
+Stroke
+Stress test
+Surgery
+Symptoms
+Tachycardia
+Tetanus
+Thrombosis
+Thyroid
+Tumor
+Ulcer
+Urinary tract infection (UTI)
+Vaccination
+Varicose veins
+Vertigo
+Viral infection
+Vitamin deficiency
+Wellness
+Abnormal cells
+Aneurysm
+Antidepressant
+Aseptic
+Biopsy
+Blood clot
+Brachytherapy
+Cardiomyopathy
+Cat scratch fever
+Cholesterol
+Chronic fatigue syndrome
+Cystic fibrosis
+Deep vein thrombosis (DVT)
+Diphtheria
+Dyslipidemia
+Eczema
+Endocrine system
+Epileptic seizure
+Fibrosis
+Gallstones
+Gestational diabetes
+Gout
+Headache
+Hearing loss
+Hemorrhage
+Histopathology
+Hyperglycemia
+Hypoglycemia
+Hypotension
+Immunotherapy
+Infectious disease
+Inflammatory bowel disease (IBD)
+Intravenous (IV)
+Lactose intolerance
+Lymphoma
+Medication
+Meningitis
+Metastasis
+Neoplasm
+Osteoarthritis
+Osteomyelitis
+Otitis media
+Pacemaker
+Palpitations
+Palliative care
+Papilloma
+Pelvic inflammatory disease (PID)
+Pericarditis
+Pneumothorax
+Post-traumatic stress disorder (PTSD)
+Presbyopia
+Psoriasis
+Radiology
+Rectal exam
+Scintigraphy
+Shingles
+Sputum
+Syncope
+Tendonitis
+Tinnitus
+Tonsillitis
+Toxic shock syndrome
+Transient ischemic attack (TIA)
+Tubal ligation
+Tumor marker
+Turgor
+Urinary incontinence
+Urinary retention
+Urticaria
+Varicella
+Vasculitis
+Vertigo
+Viral hepatitis
+Vitamin D deficiency
+Vomiting
+Vulvodynia
+Waldenström macroglobulinemia
+Wernicke's encephalopathy
+Wheezing
+Wilson's disease
+Xerosis
+Zoster
+Hyperthyroidism
+Hypothyroidism
+Abdominal distension
+Abruptio placentae
+Acute bronchitis
+Acidosis
+Acne
+Acute kidney injury
+Acquired immunodeficiency syndrome (AIDS)
+Adrenaline
+Amblyopia
+Amenorrhea
+Amnesia
+Anaphylaxis
+Anorexia nervosa
+Anticoagulant
+Antihistamine
+Aplastic anemia
+Arteriosclerosis
+Ascites
+Astigmatism
+Atypical pneumonia
+Bacterial vaginosis
+Barrett's esophagus
+Bell's palsy
+Beta-blocker
+Blood culture
+Blood transfusion
+Body mass index (BMI)
+Bronchiectasis
+Bulimia
+Burn
+Candidiasis
+Carcinogen
+Carcinoma
+Cardiac arrhythmia
+Cardiomyopathy
+Cat scratch fever
+Cholesterol
+Chronic fatigue syndrome
+Cystic fibrosis
+Deep vein thrombosis (DVT)
+Diphtheria
+Dyslipidemia
+Eczema
+Endocrine system
+Epileptic seizure
+Fibrosis
+Gallstones
+Gestational diabetes
+Gout
+Headache
+Hearing loss
+Hemorrhage
+Histopathology
+Hyperglycemia
+Hypoglycemia
+Hypotension
+Immunotherapy
+Infectious disease
+Inflammatory bowel disease (IBD)
+Intravenous (IV)
+Lactose intolerance
+Lymphoma
+Medication
+Meningitis
+Metastasis
+Neoplasm
+Osteoarthritis
+Osteomyelitis
+Otitis media
+Pacemaker
+Palpitations
+Palliative care
+Papilloma
+Pelvic inflammatory disease (PID)
+Pericarditis
+Pneumothorax
+Post-traumatic stress disorder (PTSD)
+Presbyopia
+Psoriasis
+Radiology
+Rectal exam
+Scintigraphy
+Shingles
+Sputum
+Syncope
+Tendonitis
+Tinnitus
+Tonsillitis
+Toxic shock syndrome
+Transient ischemic attack (TIA)
+Tubal ligation
+Tumor marker
+Turgor
+Urinary incontinence
+Urinary retention
+Urticaria
+Varicella
+Vasculitis
+Vertigo
+Viral hepatitis
+Vitamin D deficiency
+Vomiting
+Vulvodynia
+Waldenström macroglobulinemia
+Wernicke's encephalopathy
+Wheezing
+Wilson's disease
+Xerosis
+Zoster
+Acute lymphoblastic leukemia
+Acute myeloid leukemia
+Adrenal hyperplasia
+Allergic rhinitis
+Aneurysmal bone cyst
+Aortic dissection
+Apnea
+Arrhythmogenic right ventricular cardiomyopathy
+Barrett's esophagus
+Bell's palsy
+Benign prostatic hyperplasia
+Biliary colic
+Bladder infection
+Blood disorder
+Bone marrow failure
+Botulism
+Brain aneurysm
+Bronchiolitis
+Carpal tunnel syndrome
+Carotid artery disease
+Cellulitis
+Cholecystectomy
+Chronic fatigue syndrome
+Chronic migraine
+Clostridium difficile infection
+Colorectal cancer
+Complex regional pain syndrome
+Conjunctival hemorrhage
+Corneal abrasion
+Croup
+Crohn's disease
+Cystic hygroma
+Deep vein thrombosis
+Developmental disorder
+Diabetic retinopathy
+Diastolic dysfunction
+Dislocation
+Dizziness
+Dry eye syndrome
+Dysthymia
+Ectopic pregnancy
+Endometrial hyperplasia
+Endocarditis
+Epidural abscess
+Erythema nodosum
+Esophageal varices
+Exophthalmos
+Fibrocystic breast disease
+Fragile X syndrome
+Functional dyspepsia
+Gallbladder cancer
+Gastroesophageal reflux
+Gout
+Graves' disease
+Greenstick fracture
+Guillain-Barré syndrome
+Hashimoto's thyroiditis
+Hemophilia A
+Hepatic steatosis
+Hereditary hemochromatosis
+Herpes simplex virus
+Hirsutism
+Hodgkin's lymphoma
+Hypercalcemia
+Hyperlipidemia
+Hyperparathyroidism
+Hyperthyroidism
+Hypertensive crisis
+Hypertrophy
+Hypocalcemia
+Hypophosphatemia
+Hypotonia
+Idiopathic pulmonary fibrosis
+Impetigo
+Inguinal hernia
+Insomnia
+Interstitial cystitis
+Intestinal obstruction
+Ischemic heart disease
+Keratosis
+Klinefelter syndrome
+Laryngeal carcinoma
+Legionnaires' disease
+Leukemia
+Lymphedema
+Lyme disease
+Malabsorption syndrome
+Meningocele
+Mesothelioma
+Mitral valve prolapse
+Mononucleosis
+Multiple myeloma
+Myocardial infarction
+Nasopharyngeal carcinoma
+Nephrotic syndrome
+Neuromuscular disorder
+Obstructive sleep apnea
+Osteogenesis imperfecta
+Osteoarthritis
+Osteopenia
+Ovarian cyst
+Paget's disease
+Pancreatic cancer
+Parkinson's disease
+Pelvic floor disorder
+Peripheral neuropathy
+Pernicious anemia
+Petechiae
+Phlebitis
+Pneumonitis
+Polycystic ovary syndrome (PCOS)
+Postpartum hemorrhage
+Preterm labor
+Prolactinoma
+Psoriatic arthritis
+Pulmonary hypertension
+Raynaud's disease
+Reactive airway disease
+Restless legs syndrome
+Rheumatic fever
+Sarcoidosis
+Scleroderma
+Seizure
+Sjögren's syndrome
+Skin biopsy
+Spinal cord injury
+Spinal fusion
+Splenic rupture
+Spondylitis
+Spondylosis
+Status epilepticus
+Stenosis
+Stroke
+Subacute bacterial endocarditis
+Syphilis
+Systemic lupus erythematosus
+Testicular torsion
+Thrombophlebitis
+Thyroid cancer
+Tinnitus
+Tuberculosis
+Uremia
+Urinary retention
+Urticaria
+Varicocele
+Viral myocarditis
+Vitiligo
+Von Willebrand disease
+Waldenström macroglobulinemia
+Whipple's disease
+Wilson's disease
+Wound healing
+Abdominal aortic aneurysm
+Acquired immunodeficiency syndrome
+Acute respiratory distress syndrome
+Adrenocortical carcinoma
+Allergic reaction
+Alopecia areata
+Aortic dissection
+Arrhythmia
+Arthritis
+Asthma
+Atherosclerosis
+Autoimmune disease
+Bacterial infection
+Benign prostatic hyperplasia
+Bile duct obstruction
+Bladder cancer
+Blood clot
+Blood culture
+Bone density
+Brain tumor
+Bronchitis
+Burn
+Cancer
+Cardiac arrhythmia
+Cardiomyopathy
+Celiac disease
+Chronic kidney disease
+Chronic obstructive pulmonary disease (COPD)
+Cirrhosis
+Cleft lip
+Colorectal cancer
+Constipation
+Croup
+Cyst
+Cystic fibrosis
+Deep vein thrombosis (DVT)
+Dementia
+Diabetes mellitus
+Diabetic retinopathy
+Dysautonomia
+Eclampsia
+Electrolyte imbalance
+Embolism
+Endocarditis
+Endometriosis
+Epilepsy
+Fibromyalgia
+Fungal infection
+Gallstones
+Gastroesophageal reflux disease (GERD)
+Gout
+Heart attack
+Hernia
+Hypertension
+Hypoglycemia
+Hypothyroidism
+Immunodeficiency
+Influenza
+Irritable bowel syndrome (IBS)
+Kidney disease
+Liver cancer
+Lupus
+Lyme disease
+Malaria
+Meningitis
+Metabolic syndrome
+Migraine
+Multiple sclerosis
+Obstructive sleep apnea
+Osteoarthritis
+Osteoporosis
+Pancreatitis
+Peptic ulcer disease
+Pneumonia
+Polycythemia vera
+Post-traumatic stress disorder (PTSD)
+Prostate cancer
+Pulmonary embolism
+Rheumatoid arthritis
+Sciatica
+Sickle cell disease
+Sinusitis
+Sleep apnea
+Stroke
+Systemic lupus erythematosus
+Thrombosis
+Tonsillitis
+Tuberculosis
+Ulcerative colitis
+Urinary tract infection (UTI)
+Viral infection
+Whiplash
+Wrist fracture
+Zika virus

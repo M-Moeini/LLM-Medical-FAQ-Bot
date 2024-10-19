@@ -42,12 +42,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 def load_medical_keywords(file_path):
     try:
         df = pd.read_csv(file_path)
+
         return df['keyword'].tolist()
     except FileNotFoundError:
         print(f"Error: The file {file_path} was not found.")
         return []
     
 MEDICAL_KEYWORDS = load_medical_keywords('F:\Job\Projects\Medical Bot\LLM-Medical-FAQ-Bot\medical_terms.csv')
+MEDICAL_KEYWORDS = [item.lower() for item in MEDICAL_KEYWORDS]
 
 # Preprocessing function using NLTK
 def preprocess_question(question):
@@ -65,6 +67,7 @@ async def start(update: Update, context):
 
 async def handle_message(update: Update, context):
     user_question = preprocess_question(update.message.text)
+    # print(user_question,"user_question")
 
     # Check if the user's question contains any medical keywords
     if any(keyword in user_question.lower() for keyword in MEDICAL_KEYWORDS):

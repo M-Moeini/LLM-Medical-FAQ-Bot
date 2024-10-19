@@ -19,13 +19,15 @@ nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 
-telegram_token_path = r'F:\Job\Projects\Medical Bot\api_keys\telegram_token.text'
-with open(telegram_token_path, 'r') as file:
-    TELEGRAM_TOKEN = file.read().strip()  
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+if not TELEGRAM_TOKEN:
+    raise ValueError("API key not found. Please set the TELEGRAM_TOKEN environment variable.")
 
-api_key_path = r'F:\Job\Projects\Medical Bot\api_keys\key.text'
-with open(api_key_path, 'r') as file:
-    api_key = file.read().strip()  
+
+api_key = os.getenv('OPENAI_API_KEY')
+if not api_key:
+    raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
+
 
 FASTAPI_URL = "http://127.0.0.1:8000/ask"
 

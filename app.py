@@ -3,9 +3,11 @@ from fastapi import Body
 from pydantic import BaseModel
 import openai
 import os
-file_path = r'F:\Job\Projects\Medical Bot\api_keys\key.text'
-with open(file_path, 'r') as file:
-    api_key = file.read().strip()  
+
+api_key = os.getenv('OPENAI_API_KEY')
+if not api_key:
+    raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
+
 print(api_key)
 class Question(BaseModel):
     question: str

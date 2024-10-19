@@ -3,7 +3,6 @@ import nltk
 import requests
 import asyncio
 import os
-import spacy
 import pandas as pd
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters

@@ -27,7 +27,6 @@ The bot is **running on an AWS EC2 instance** and is currently in its **prototyp
 
 4. **LangChain Integration**: The bot integrates **LangChain**, a framework for building applications powered by large language models (LLMs). It enables handling the conversational flow and interacting with GPT-3.5 through the **ConversationChain** class, allowing the bot to respond fluidly to medical questions.
 
-5. **MLOps Pipeline**: The bot uses basic **MLOps techniques**, integrating OpenAI’s GPT models and ensuring an automated flow for handling medical inquiries. While this prototype doesn't yet have a fully developed MLOps stack, the potential for building one (with monitoring, retraining models, version control for ML models, etc.) is essential for scaling this type of application.
 
 ## Features
 
@@ -36,7 +35,6 @@ The bot is **running on an AWS EC2 instance** and is currently in its **prototyp
 - **Preprocessing of user input** to handle tokenization and stopword removal using **NLTK**.
 - **Medical Terms Dataset Filtering** to restrict answers to relevant medical queries (Note: This is an early-stage approach and can be further enhanced with better NLP techniques).
 - **LangChain for conversation management**, allowing smoother and more contextually-aware conversations with users.
-- **MLOps Considerations**: The prototype includes a basic MLOps mindset, with model calls to OpenAI’s API, and an architecture designed for scale in the future.
 
 
 ## Setup & Running
@@ -115,7 +113,7 @@ Replacing the simple keyword-based approach for filtering medical queries with m
 
 ### Full MLOps Pipeline
 
-Currently, this prototype uses a minimal MLOps stack. Future iterations could include:
+Currently, this prototype uses a minimal MLOps stack with the help of **Docker**. Future iterations could include:
 
 - **Model versioning** to track the performance of different versions of the model.
 - **Automatic retraining** based on feedback or new data.

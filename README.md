@@ -53,3 +53,86 @@ The bot is **running on an AWS EC2 instance** and is currently in its **prototyp
    ```bash
    git clone https://github.com/M-Moeini/LLM-Medical-FAQ-Bot.git
    cd LLM-Medical-FAQ-Bot
+
+
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   
+
+3. **Set Environment Variables**:
+   **TELEGRAM_TOKEN**: Your Telegram bot token (You can get it from @BotFather in Telegram.)
+   **OPENAI_API_KEY**: Your OpenAI API key (You can get it from openAI Website.)
+
+4. **Run the Application**:
+   ```bash
+   uvicorn app:app --host 0.0.0.0 --port 8001 & python telegram_bot.py
+
+5. **Access it**:
+
+The FastAPI app is accessible at:
+```
+http://<your-ec2-public-ip>:8001/ask
+```
+
+The Telegram bot can be interacted with via Telegram if you set it up with @BotFather.
+
+
+
+
+### Steps to Run it on AWS EC2
+
+Use the following command to copy your project files to the EC2 instance:
+
+1. **Copy the files**:
+```bash
+scp -i your-key.pem -r /path/to/your/project ec2-user@your-ec2-public-ip:/home/ec2-user
+```
+
+2. **Build and Run Docker Container**:
+Navigate to the project directory on your EC2 instance and run the following commands:
+
+```bash
+docker build -t medical_bot .
+docker run -d -e TELEGRAM_TOKEN=<your_telegram_token> -e OPENAI_API_KEY=<your_openai_key> -p 8001:8001 medical_bot
+```
+
+3. **Access it**:
+
+The FastAPI app is accessible at:
+```
+http://<your-ec2-public-ip>:8001/ask
+```
+
+The Telegram bot can be interacted with via Telegram if you set it up with @BotFather.
+
+
+## Future Improvements
+
+### Advanced NLP Techniques
+
+Replacing the simple keyword-based approach for filtering medical queries with more sophisticated NLP techniques such as sentiment analysis, topic modeling, or intent detection.
+
+### Full MLOps Pipeline
+
+Currently, this prototype uses a minimal MLOps stack. Future iterations could include:
+
+- **Model versioning** to track the performance of different versions of the model.
+- **Automatic retraining** based on feedback or new data.
+- **Monitoring and alerting** to ensure smooth operation of the model in production.
+
+### Cloud Development
+   Running it on **AWS ElasticBeans** or running it with the help of **AWS Fargate + AWS ECS**
+
+
+## Contribution
+Feel free to fork this repository and contribute by submitting a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## Contact
+- **Mahdi Moeini**
+  - **Email**: [mmoeini@mun.ca](mailto:mmoeini@mun.ca)
+  - **LinkedIn**: [linkedin.com/in/mmoeini](https://linkedin.com/in/mmoeini)
+  - **GitHub**: [m-moeini.github.io](https://m-moeini.github.io)
+
+
+   

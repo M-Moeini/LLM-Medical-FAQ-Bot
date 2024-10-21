@@ -7,7 +7,6 @@ This repository contains the source code for a **Medical FAQ Bot**, which answer
 The bot is **running on an AWS EC2 instance** and is currently in its **prototype phase**, meaning it’s not yet a full MVP but serves as a fair proof of concept for answering medical-related queries.
 
 ## Tech Stack
-
 - **Backend**: FastAPI
 - **Telegram Bot**: Python Telegram Bot
 - **OpenAI GPT-3.5** for answering medical questions

@@ -4,6 +4,7 @@
 
 This repository contains the source code for a **Medical FAQ Bot**, which answers medical questions using OpenAI's GPT-3.5 API and Telegram Bot API. The bot can respond to users' medical queries via both a FastAPI web interface and a Telegram chat interface.
 The bot is **running on an AWS EC2 instance** and is currently in its **prototype phase**, meaning it’s not yet a full MVP but serves as a fair proof of concept for answering medical-related queries.
+You can use the bot from this link: [Medical FAQ Bot](https://t.me/MedicalFAQbot)
 
 [![Medical Bot FAQ Preview](https://github.com/M-Moeini/LLM-Medical-FAQ-Bot/blob/main/medicalbotimg.webp)](https://github.com/M-Moeini/LLM-Medical-FAQ-Bot/issues/2)
 

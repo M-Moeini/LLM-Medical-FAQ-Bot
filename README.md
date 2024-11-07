@@ -1,5 +1,6 @@
 # Medical FAQ Bot
 
+
 ## Overview
 
 This repository contains the source code for a **Medical FAQ Bot**, which answers medical questions using OpenAI's GPT-3.5 API and Telegram Bot API. The bot can respond to users' medical queries via both a FastAPI web interface and a Telegram chat interface.
